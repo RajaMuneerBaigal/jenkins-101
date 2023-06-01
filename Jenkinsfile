@@ -13,6 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
+                apk add py3-pip
                 pip install -r requirements.txt
                 '''
             }
